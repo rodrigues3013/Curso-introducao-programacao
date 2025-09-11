@@ -1,0 +1,65 @@
+Esse código em C é um programa que calcula a divisão de dois números, mas com uma proteção extra: ele verifica se a divisão por zero é possível. Vamos ver cada parte em detalhes.
+
+Visão Geral do Código
+O programa foi projetado para:
+
+Pedir dois números com casas decimais (números de ponto flutuante).
+
+Verificar se o segundo número é zero.
+
+Se não for zero, ele faz a divisão e mostra o resultado com duas casas decimais.
+
+Se for zero, ele exibe uma mensagem de erro, porque a divisão por zero é indefinida na matemática.
+
+Análise Detalhada Linha a Linha
+#include <stdio.h>
+Essa linha inclui a biblioteca stdio.h (Standard Input/Output), que é fundamental para usar funções como printf para exibir texto e scanf para ler dados do teclado.
+
+int main() { ... }
+Esta é a função principal do programa, onde a execução começa. O int indica que a função retorna um valor inteiro para o sistema operacional (o 0 no final), sinalizando que o programa rodou sem problemas.
+
+float num1, num2, resultado;
+Aqui declaramos as variáveis. A palavra-chave float é usada para variáveis que vão armazenar números de ponto flutuante, ou seja, números que podem ter casas decimais (como 3.14, 10.5, etc.).
+
+printf("Digite o primeiro número: ");
+Essa linha usa a função printf para exibir a mensagem na tela, pedindo ao usuário o primeiro número.
+
+scanf("%f", &num1);
+Essa linha lê o número digitado pelo usuário.
+
+"%f": O especificador de formato %f informa ao scanf que ele deve esperar um número de ponto flutuante (f de "float").
+
+&num1: O operador & (endereço) diz ao scanf para onde na memória o valor deve ser salvo, que, neste caso, é a variável num1.
+
+printf("Digite o segundo número: ");
+Similar à linha anterior, ela pede o segundo número.
+
+scanf("%f", &num2);
+Essa linha armazena o segundo número na variável num2.
+
+if (num2 != 0) { ... } else { ... }
+Esta é a estrutura de controle mais importante do código. O if-else permite que o programa tome decisões.
+
+if (num2 != 0): Essa linha verifica a condição. O operador != significa "diferente de". A condição verifica se o valor de num2 é diferente de zero.
+
+Se a condição for verdadeira (ou seja, num2 não é zero), o bloco de código dentro das chaves {} do if é executado.
+
+else: Se a condição do if for falsa (ou seja, num2 é zero), o código dentro do bloco {} do else é executado.
+
+resultado = num1 / num2;
+Essa linha está dentro do bloco if. Se a condição for verdadeira, a divisão é realizada e o resultado é armazenado na variável resultado. O operador / realiza a divisão.
+
+printf("O resultado da divisão é: %.2f\n", resultado);
+Essa linha também está no bloco if. Ela exibe o resultado da divisão.
+
+"%.2f": Este é um especificador de formato especial. O .2 entre o % e o f diz ao printf para formatar o número para ter exatamente duas casas decimais.
+
+\n: Cria uma nova linha.
+
+printf("Erro: Divisão por zero!\n");
+Essa linha está no bloco else. Se o segundo número digitado for 0, esta mensagem de erro será exibida.
+
+return 0;
+A função main retorna 0, indicando que o programa foi encerrado com sucesso.
+
+Esse código é um ótimo exemplo de como usar a estrutura if-else para garantir que seu programa lide com situações inesperadas, como a divisão por zero, prevenindo erros e fornecendo uma resposta útil ao usuário.
