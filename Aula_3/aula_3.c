@@ -15,9 +15,9 @@ int main(){
     scanf("%d", &n2);
 
     if (n1 == n2 ){
-        printf("As variáveis a e b são iguais: %d = %d\n", n1, n2);
+        printf("As variáveis n1 e n2 são iguais: %d = %d\n", n1, n2);
     } else {
-        printf("As variáveis a e b são diferentes: %d != %d\n", n1, n1);
+        printf("As variáveis n1 e n2 são diferentes: %d != %d\n", n1, n2);
     }
     
 
