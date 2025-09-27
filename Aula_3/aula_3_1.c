@@ -14,5 +14,9 @@ int main()
     {
         printf("Entrou no if\n");
     }
+    else
+    {
+        printf("entrou no else\n");
+    }
     return EXIT_SUCCESS;
 }
