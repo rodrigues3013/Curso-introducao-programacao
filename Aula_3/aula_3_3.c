@@ -8,18 +8,19 @@
 
 int main()
 {
-    int cond = TRUE;
+    int cond = FALSE;
+    int cond2 = TRUE;
 
     if (cond)
     {
         printf("Entrou no if\n");
     }
-    else
+    else if (cond2)
     {
-        printf("entrou no else\n");
+        printf("Entrou no segundo if\n");
     }
 
-    printf("Saindo do if/else\n");
+    printf("Saindo do if/else!\n");
 
     return EXIT_SUCCESS;
 }

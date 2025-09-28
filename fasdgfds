@@ -1,0 +1,16 @@
+[1mdiff --git a/Aula_3/aula_3_2 b/Aula_3/aula_3_2[m
+[1mindex 6a121cc..da5ec05 100755[m
+Binary files a/Aula_3/aula_3_2 and b/Aula_3/aula_3_2 differ
+[1mdiff --git a/Aula_3/aula_3_2.c b/Aula_3/aula_3_2.c[m
+[1mindex d71ce8b..358d3e1 100644[m
+[1m--- a/Aula_3/aula_3_2.c[m
+[1m+++ b/Aula_3/aula_3_2.c[m
+[36m@@ -8,7 +8,7 @@[m
+ [m
+ int main()[m
+ {[m
+[31m-    int cond = FALSE;[m
+[32m+[m[32m    int cond = TRUE;[m
+ [m
+     if (cond)[m
+     {[m
